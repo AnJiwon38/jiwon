@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>폼 태그 종류</title>
+</head>
+<body>
+	<h2>폼 양식을 만드는 태그1</h2>
+	<form name="f" method="get" action="serverControl.jsp">
+	<!-- name="f" => name은 언제든지 변경할 수 있음. 
+		 method get과 post 두 종류 사용. get은 주소창에서 입력정보 확인 가능, post는 확인 불가능
+		 action 전달(전송) 미리 만들어둔 데이터베이스 필드명과 동일하게 사용
+		 javascript 정보를 사용자가 넘겼을 때 클라이언트 입장에서 확인하기 위해서 사용-->
+		 <input type="hidden" name="code">
+		 이름 : <input type="text" name="name" autofocus><br>
+		 <!-- name 전송하기 위해서 필요함. autofocus 커서 깜빡이는거 (focus 지금 커서를 어디에 둘것인지)-->
+		 나이 : <input type="text" name="age" value="20" readonly><br>
+		 <!-- readonly 작성 못함 -->
+		 입력 내용 : <input type="text" name="content" value="000" disabled><br>
+		 <!-- disabled 비활성화, 열려있지않음 -->
+		 <!-- value 미리 입력되어 있는 문자-->
+		 패스워드 : <input type="password" name="pass"><br>
+		 ID : <input type="text" name="id" size="15" required><br>
+		 <!-- required 입력된 데이터없을때 경고창, 넘어가지않음 --> 
+		 pass : <input type="text" name="pass2" size="15" placeholder="비밀번호" required><br>
+		 <!-- placeholder 현재 텍스트 상자 설명-->
+		 <hr/>
+			
+		
+		<h2>본문 내용 : 긴 글자를 작성</h2>
+		<textarea rows="5" cols="50">텍스트를 입력 공간
+		</textarea>
+		<hr/>
+		
+		
+		<h2>라디오 radio 입력</h2><!-- 보기 중 하나만 선택 가능, 중복 선택 불가능 -->
+		당신의 혈액형은 :
+		<input type="radio" name="blood" value="A" checked>A형
+		<!-- **** checked 미리 체크해두는거 새로고침해도 선택되어있음 -->
+		<input type="radio" name="blood" value="B">B형
+		<input type="radio" name="blood" value="AB">AB형
+		<input type="radio" name="blood" value="O">O형<br>
+		<!-- value가 중요 -->
+		RH :
+		<input type="radio" name="bloodRh" value="+">+
+		<input type="radio" name="bloodRh" value="-">-
+		
+		
+		<h2>체크박스 checkbox 입력</h2><!-- 보기 중 여러개 선택 가능 -->
+		여러분의 취미(복수선택가능) : 
+		<input type="checkbox" name="hobby" value="sleep">잠
+		<input type="checkbox" name="hobby" value="play">놀기
+		<input type="checkbox" name="hobby" value="game">게임
+		<input type="checkbox" name="hobby" value="reading">독서
+		<hr/>
+		<h2>선택 목록 : 펼침목록</h2><!-- 언더 삼각형 클릭시 보기 보여지는거 -->
+		웹 개발 취업을 하기 위해서 선택해야 하는 필수 과목은?<br>
+			<select name="subjects" multiple><!-- multiple 사용시 복수선택 가능 -->
+				<option value="1">HTML5</option>
+				<option value="2">CSS</option>
+				<option value="3">Javascript</option>
+				<option value="4">JQuery</option>
+				<option value="5">JAVA</option>
+				<option value="6">JSP/Servlet</option>
+				<option value="7">DATABASE</option>
+				<option value="8">spring framework</option>
+				<option value="9">프로젝트</option>
+			</select>
+			<hr/>
+		
+		<!-- value값은 보통 영어로 사용함 -->
+		<input type="color" value="#00ff00">
+		<hr>
+		<h2>그래프</h2>
+		김소진 : <meter min="0" max="100" optimum="50" value="90">60 out of 100</meter><br>
+		<!-- value 값 만큼 그래프 채워져있음 -->
+		프로그레서 : <progress value="22" max="100" title="진행율"></progress>
+		<hr>
+		<input type="file">
+		<hr>
+		<input type="range" name="point" min="0" max="100">
+		<hr>
+		<input type="reset" value="재작성">
+		<input type="submit" value="로그인"><br>
+	</form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>200226 과제</title>
+</head>
+<body>
+<div align="center">
+	<form name="f" mothod="get" action="#">
+		<table border="1" width="800" height="600" bgcolor="white">
+			<tr>
+				<td align="center" colspan="2" bgcolor="#A1CF36">회원 기본 정보</td>
+			</tr>
+			<tr>
+				<td width="150">아이디</td>
+				<td><input type="text" name="id" size="12" autofocus max="12" > 4~12자의 영문 대소문자와 숫자로만 입력</td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="pw" size="12" > 4~12자의 영문 대소문자와 숫자로만 입력</td>
+			</tr>
+			<tr>
+				<td>비밀번호 확인</td>
+				<td><input type="password" name="repw" size="12" ></td>
+			</tr>
+			<tr>
+				<td>이멜주소</td>
+				<td><input type="text" name="email" > 예)id@domain.com</tr>
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name" ></tr>
+			</tr>
+			<tr>
+				<td align="center" colspan="2" bgcolor="#A1CF36">개인 신상 정보</td>
+			</tr>
+			<tr>
+				<td>주민등록번호</td>
+				<td><input type="text" name="num" size="16" > 예)000000-0000000</tr>
+			</tr>
+			<tr>
+				<td>생일</td>
+				<td><input type="text" name="year"> 년 
+								<select name="month">
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select> 월
+								<select name="month">
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+								</select> 일  </td>
+			</tr>
+			<tr>
+				<td>관심분야</td>
+				<td><input type="checkbox" name="like" value="com">컴퓨터
+								<input type="checkbox" name="like" value="internet">인터넷
+								<input type="checkbox" name="like" value="trip">여행
+								<input type="checkbox" name="like" value="movie">영화감상
+								<input type="checkbox" name="like" value="music">음악감상</td>
+			</tr>
+			<tr>
+				<td>자기소개</td>
+				<td><textarea rows="10" cols="50" ></textarea></td>
+			</tr>
+		</table>
+			<br>
+			<input type="submit" value="회원가입"> <input type="reset" value="다시 입력">
+	</form>
+	</div>
+</body>
+</html>
