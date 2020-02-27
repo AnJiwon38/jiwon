@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>클래스 및 id 선택자 사용하기</title>
+	<!-- id는 #으로 표시 -->
+	<!-- 속성에 대한 공통값을 줄 때 대괄호[] 사용해서 처리를 한다. -->
+	<style>
+		#id1{
+			color : blue;
+		}
+		#id2{
+			color : blue;
+		}
+		h2#id1{
+			color : red;
+		}
+		.class1{
+			color : blue;
+			background-color : yellow;
+		}
+		.class2{
+			color : red;
+			background-color : green;
+		}
+		h3.class1{
+			color : navy;
+			background-color : pink;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h1 id="id1">Id 선택자 적용</h1>
+	<h1 id="id2">Id 선택자 적용</h1>
+	<h2 id="id1">Id 선택자 적용</h2>
+	
+	 <hr>
+	<h1 class="class1">당신의 나이는 현재.....</h1>
+	<p class="class2">20</p>
+	<h1 class="class1">당신의 키는...</h1>
+	<p class="class2">2미터 안됨</p>
+	<h3 class="class1">보통사람입니다.(Element+Class Selector)</h3>
+	<!-- class명을 바꿔서 새로 만들어도 되고, h3.class1로 새로 만들어도 됨 -->
+	<!-- element - body에 포함,  요소 하나하나가 객체 -->
+</div>	
+</body>
+</html>
