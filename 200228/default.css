@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*   Reset : 처음에 만들때 default 값을 미리 설정해두고 웹페이지 제작 시작하고 나중에 구체적인 style 추가해줌    */
+html, body, h1, h2, h3, h4, h5, h6, div, p, ol, li, menu, section,
+   article, aside {
+   margin: 0;
+   padding: 0;
+}
+
+html, body {
+   width: 100%;
+}
+
+body {
+   widdth: 100%;
+   background: #fff;
+   min-width: 320px;
+}
+
+body, input select, textarea, button {
+   border: none;
+   font-size: 12px;
+   font-family: Noto Sans KR, sans-serif;
+   color: #7272727;
+}
+
+ul, ol, li {
+   list-style: none;
+}
+
+table {
+   width: 100%;
+   border-spacing: 0;
+}
+
+img, fieldset {
+   border: 0;
+}
+
+label, img, input, select, textarea, button {
+   vertical-align: middle;
+}
+
+.hide, caption, legend {
+   line-height: 0;
+   font-size: 1px;
+   overflow: hidden;
+}
+
+hr {
+   display: none;
+} /*  display : none(웹페이지에서 안보임) / inline(마우스를 위에 갖다댈 경우 보여짐)  */
+main, header, section, nav, footer, aside, article {
+   display: block;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+/* Form */
+textarea {
+   border: 1px solid #dbdbdb;
+   padding: 5px 0;
+}
+
+select {
+   height: 32px;
+   font-size: 13px;
+   color: #373737;
+   border: 1px solid #e9e9e9;
+   background: #fff;
+   border-radius: 5px;
+   bo
+}
+
+input [type=text], input [type=password], input [type=tel], input [type=time],
+   input [type=email], input [type=file], input [type=url], input [type=number],
+   input [type=date], textarea {
+   width: 100%;
+   height: 30px;
+   font-size: 13px;
+   color: #373737;
+   border: 1px solid #e9e9e9;
+   background: #fff;
+}
+
+input [type=text][readonly], input [type=password][disabled], input [type=tel][readonly],
+   input [type=time][disabled] {
+   background: #eaeaea
+}
+
+.clear {
+   clear: both;
+}
+/*
+  border-spacing - 셀과 셀끼리의 간격
+  margin - left, top 
+  padding - 안쪽여백
+  font-family - 먼저 사용, (없으면 사용)
+  사이트 디자인 리모델링할 때 처음 초기값으로 돌려놓아야함
+  문서에 미리 넣어서, 작업할 때 초기화된 상태로 사용하게 해주기 위해서 작성(기본 설계값)
+  
+  .hide 설정해줌으로서 편한 점 => class를 hide로 줘서 따로 주석처리 없이 주석처리가 가능함
+  
+  display의 속성
+  none 이면 안보이는데 inline(안에 있는 대상만 감싸줌, 안에 세세하게 잡을 때), block(문단 블록 단위로 잡을때)으로 바꿔주면 보임
+  
+  radius - round
+  
+  속성 제어할 때 대괄호[] 사용
+ */
